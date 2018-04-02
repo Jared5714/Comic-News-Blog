@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<div class = "ui main text container segment">
+  <h3>New Post</h3>
+<form action = "/blogs" method = "post" class="ui form">
+  <div class="field">
+    <label>Comic Title</label>
+    <input type="text" name="blog[title]" placeholder="Title">
+  </div>  <div class="field">
+    <label>Comic Writer</label>
+    <input type="text" name="blog[writer]" placeholder="Writer">
+  </div>  <div class="field">
+    <label>Comic Artist</label>
+    <input type="text" name="blog[artist]" placeholder="Artist">
+  </div>
+  <div class="field">
+    <label>Image URL</label>
+    <input type="text" name="blog[image]" placeholder="Image URL">
+  </div>
+  <div class="field">
+    <label>Content</label>
+    <textarea name="blog[body]" placeholder="Content"></textarea>
+  </div>
+  <button class="ui blue button" type="submit">Submit</button>
+  <button class="ui yellow button" type="reset">Reset</button>
+</form>
+</div>

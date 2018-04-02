@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+
+<% blogs.forEach(function(blog){ %>
+<div class="ui
+items">
+  <div class="item">
+    <div class="ui small image">
+      <img src="<%= blog.image %>">
+    </div>
+    <div class="content">
+      <div class="header"><%= blog.title %></div>
+      <p><strong>Writer:</strong><%= blog.writer %> <strong>Artist:</strong> <%= blog.artist %></p>
+      <div class="meta">
+        <span class="date"><%= blog.created.toDateString() %></span>
+      </div>
+      <div class="description">
+        <p><%- blog.body.substring(0, 300) %>...</p>
+      </div>
+      <a href = "/blogs/<%= blog._id %>">Read More</a>
+    </div>
+  </div>
+
+<% }); %>
+
+<% include ./partials/footer %>
+

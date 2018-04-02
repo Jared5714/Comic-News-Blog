@@ -1,0 +1,15 @@
+i.icon {
+    font-size: 2em;
+}
+
+body {
+    margin: 100px;
+}
+
+
+#delete{
+    display: inline;
+}
+ img{
+     margin-bottom: 10px;
+ }
